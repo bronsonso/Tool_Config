@@ -5,7 +5,7 @@
     {
       "label": "Git: Add, Commit & Push",
       "type": "shell",
-      "command": "git add --all && git commit -m \"${input:commitMessage}\" && git push",
+      "command": "git add . ; if ($?) { git commit -m '${input:commitMessage}' } ; if ($?) { git push -u origin main }",
       "problemMatcher": [],
       "presentation": {
         "echo": true,
@@ -24,12 +24,5 @@
       "description": "Enter commit message:",
       "default": "Update"
     }
-  ],
-  // Task-specific keybinding
-  "keybindings": [
-    {
-      "key": "ctrl+shift+g p",  // Key combination
-      "when": "editorTextFocus" // Optional condition
-    }
-  ]  
+  ]
 }

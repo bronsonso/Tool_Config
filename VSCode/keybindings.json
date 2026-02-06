@@ -1,6 +1,8 @@
 // Git: Add, Commit & Push
-{
-  "key": "ctrl+shift+g p",
-  "command": "workbench.action.tasks.runTask",
-  "args": "Git: Add, Commit & Push"
-}
+[
+  {
+    "key": "ctrl+shift+g p",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Git: Add, Commit & Push"
+  }
+]
